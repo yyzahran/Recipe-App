@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+app/app/__pycache__/calc.cpython-39.pyc
+app/app/__pycache__/settings.cpython-39.pyc
+app/app/__pycache__/tests.cpython-39.pyc
+app/core/__pycache__/admin.cpython-39.pyc
+app/core/__pycache__/models.cpython-39.pyc
+app/core/management/commands/__pycache__/wait_for_db.cpython-39.pyc
+app/core/tests/__pycache__/test_commands.cpython-39.pyc
+app/core/tests/__pycache__/test_models.cpython-39.pyc
