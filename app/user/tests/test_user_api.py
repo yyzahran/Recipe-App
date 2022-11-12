@@ -22,7 +22,7 @@ class PublicUserApiTests(TestCase):
     """Tests the public features of the user api"""
 
     def setUp(self):
-        self.client = APIClient
+        self.client = APIClient()
 
     def test_create_user_success(self):
         """Tests creating a user is successful"""
