@@ -10,7 +10,7 @@ from core.models import Recipe
 
 
 class RecipeViewSet(viewsets.ModelViewSet):
-    """View for manage recipe APIs"""
+    """View to manage recipe APIs"""
     serializer_class = serializers.RecipeDetailSerializer
     queryset = Recipe.objects.all()
     authentication_classes = [TokenAuthentication]
