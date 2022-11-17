@@ -24,7 +24,7 @@ class UserAdmin(BaseUserAdmin):
         ),
         (_('Important dates'), {'fields': ('last_login',)}),
     )
-    redonly_fields = ['last_login']
+    readonly_fields = ['last_login']
     # Class is a way to assign django CSS classes
     # in the django admin
     add_fieldsets = (
