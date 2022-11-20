@@ -326,7 +326,7 @@ class PrivateRecipeApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(recipe.tags.count(), 0)
 
-    def test_create_ingredient_on_updating_recipe(self):
+    def test_update_ingredient_on_updating_recipe(self):
         """Test updating a recipe with an ingredient works"""
         payload = {
             'title': "Overnight oats",
@@ -359,7 +359,7 @@ class PrivateRecipeApiTests(TestCase):
                 user=self.user, name=ingredient['name']).exists()
             self.assertTrue(exists)
 
-    def test_create_recipe_with_already_existing_tags(self):
+    def test_create_recipe_with_already_existing_ingredients(self):
         """Test creating a recipe with an already-existsing ingredient"""
         ingredient = Ingredient.objects.create(user=self.user, name='Oatmeal')
 
@@ -399,7 +399,7 @@ class PrivateRecipeApiTests(TestCase):
         recipe = create_recipe(user=self.user)
 
         payload = {
-            'ingredient': [{
+            'ingredients': [{
                 'name': "Raisins"
             }]
         }
