@@ -470,7 +470,7 @@ class ImageUploadTests(TestCase):
         self.client.force_authenticate(self.user)
         self.recipe = create_recipe(user=self.user)
 
-    def TearDown(self):
+    def tearDown(self):
         self.recipe.image.delete()
 
     def test_upload_valid_image(self):
