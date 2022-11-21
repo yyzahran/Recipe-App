@@ -135,3 +135,4 @@ app/core/__pycache__/models.cpython-39.pyc
 app/core/management/commands/__pycache__/wait_for_db.cpython-39.pyc
 app/core/tests/__pycache__/test_commands.cpython-39.pyc
 app/core/tests/__pycache__/test_models.cpython-39.pyc
+app/vol/
