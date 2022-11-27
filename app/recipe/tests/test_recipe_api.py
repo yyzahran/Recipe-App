@@ -1,10 +1,6 @@
 """Tests for recipe APIs"""
 
 from decimal import Decimal
-import tempfile
-import os
-
-from PIL import Image
 
 from django.contrib.auth import get_user_model
 from django.test import TestCase
@@ -25,11 +21,6 @@ from recipe.serializers import (
 )
 
 RECIPES_URL = reverse('recipe:recipe-list')
-
-
-def image_upload_url(recipe_id):
-    """Creates and returns an image upload URL"""
-    return reverse('recipe:recipe-upload-image', args=[recipe_id])
 
 
 def detail_url(recipe_id):
